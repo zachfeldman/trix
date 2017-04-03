@@ -24,6 +24,8 @@ module TrixEditorHelper
   end
 end
 
+ActionView::Base.send :include, TrixEditorHelper
+
 module ActionView
   module Helpers
     include TrixEditorHelper
